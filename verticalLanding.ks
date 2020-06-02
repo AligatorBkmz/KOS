@@ -1,3 +1,16 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// KSP kOS Vertical Landing v1.0.0
+// Copyright (C) 2020 AligatorBkmz@gmail.com
+// Distributed under the GPL Licence
+//
+// Description: Causes your vessel to hold your current heading and pitch while landing in atmosphere .
+//
+// Instructions: 
+//		1) Copy this script to your [KSP\Ships\Script] Folder
+//
+//		2) Build a ship with a kOS processor on-board. At lease one processor is required,
+//		   multiple if needing additional systems.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 SET MINVERTSPEED TO 3.//Minimal landing speed
 SET SMOOTHNESS TO 0.05.//How fast you want land
 SET MAXVERTICALSPEED TO -300+5. //Must be <0
