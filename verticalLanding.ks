@@ -45,7 +45,7 @@ PRINT "speedNorth      = " + speedNorth.
 PRINT "===============STAGE " +(STG)+"===============".
 }
 
-FUNCTION CalcSmooth {
+FUNCTION CalcSmooth {//not used
 	SET RES TO 0.05.
 	SET MIN TO 9999.
 	SET MAX TO 0.
