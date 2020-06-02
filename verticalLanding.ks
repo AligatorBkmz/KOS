@@ -88,17 +88,17 @@ IF SHIP:VERTICALSPEED<MAXVERTICALSPEED {SET THRUST TO THRUST+((THRUST/2)+0.1).}
 }
 
 FUNCTION HorizontalBraking {
-	SET sinYaw TO sin(ship:up:yaw).
-	SET cosYaw TO cos(ship:up:yaw).
-	SET sinPitch TO sin(ship:up:pitch).
-	SET cosPitch TO cos(ship:up:pitch).
+  SET sinYaw TO sin(ship:up:yaw).
+  SET cosYaw TO cos(ship:up:yaw).
+  SET sinPitch TO sin(ship:up:pitch).
+  SET cosPitch TO cos(ship:up:pitch).
 	
-	SET unitVectorEast TO V(-cosYaw, 0, sinYaw).
-    SET unitVectorNorth TO V(-sinYaw*sinPitch, cosPitch, -cosYaw*sinPitch).
+  SET unitVectorEast TO V(-cosYaw, 0, sinYaw).
+  SET unitVectorNorth TO V(-sinYaw*sinPitch, cosPitch, -cosYaw*sinPitch).
 	
-	SET shipVelocitySurface TO ship:velocity:surface.
-    SET speedEast TO vdot(shipVelocitySurface, unitVectorEast).
-    SET speedNorth TO vdot(shipVelocitySurface, unitVectorNorth).
+  SET shipVelocitySurface TO ship:velocity:surface.
+  SET speedEast TO vdot(shipVelocitySurface, unitVectorEast).
+  SET speedNorth TO vdot(shipVelocitySurface, unitVectorNorth).
 }
 
 FUNCTION tick {
